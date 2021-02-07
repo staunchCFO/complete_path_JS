@@ -1,4 +1,13 @@
 /**
+ * Author: Emeka Okezie
+ * Software Developer @Ace_Africa
+ * Email: okezieemeka949@gmail.com
+ * Twitter: staunchCFO
+ * 
+ */
+
+
+/**
  * JavaScript is a programming language initially designed to interact with elements of web pages. In web browsers, JavaScript consists of three main parts:
 
     ECMAScript that provides the core functionality.
