@@ -137,5 +137,25 @@ function say(message) {
 }
 //- In this example, if the message is blank (or undefined), the say() function will show nothing.
 
+/**
+ *  Function hoisting
+ * 
+ * In JavaScript, it is possible to use a function before it is declared. See the following example:
+ */
+showMe(); // a hoisting example
+
+function showMe(){
+    console.log('an hoisting example');
+}
+/**
+ * The function hoisting is a mechanism that the JavaScript engine physically moves function declarations to the top 
+ * of the code before executing them. The following shows the version of the code before the JavaScript engine executes it:
+ */
+function showMe(){
+    console.log('a hoisting example');
+}
+
+showMe(); // a hoisting example
+
 
 
