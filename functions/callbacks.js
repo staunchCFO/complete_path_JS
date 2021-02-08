@@ -117,15 +117,15 @@ function process(picture) {
 }
 //- When you execute the following code:
 
-let url = 'https://www.javascripttutorial.net/foo.jg';
+let url = 'https://www.emeka.net/pic3.jpg';
 
 download(url);
 process(url);
 
 //- you will get the following output:
 
-`Processing https://javascripttutorial.net/foo.jg
-Downloading https://javascripttutorial.net/foo.jg ...`
+`Processing https://www.emeka.net/pic3.jpg
+Downloading https://www.emeka.net/pic3.jpg ...`
 
 /**
  * This is not what you expected because the process() function executes before the download() function. The correct 
@@ -150,13 +150,13 @@ function process(picture) {
     console.log(`Processing ${picture}`);
 }
 
-let url = 'https://wwww.javascripttutorial.net/pic.jpg';
+let url = 'https://www.emeka.net/pic3.jpg';
 download(url, process);
 
 Output:
 
-`Downloading https://www.javascripttutorial.net/pic.jpg ...
-Processing https://www.javascripttutorial.net/pic.jpg`
+`Downloading https://www.emeka.net/pic3.jpg ...
+Processing https://www.emeka.net/pic3.jpg`
 
 /**
  * In this example, the process() is a callback passed into an asynchronous function.
@@ -177,7 +177,7 @@ function download(url, callback) {
     }, 3000);
 }
 
-let url = 'https://www.javascripttutorial.net/pic.jpg';
+let url = 'https://www.emeka.net/pic3.jpg';
 download(url, function(picture) {
     console.log(`Processing ${picture}`);
 }); 
@@ -226,9 +226,9 @@ function download(url, callback) {
     }, 3000);
 }
 
-const url1 = 'https://www.javascripttutorial.net/pic1.jpg';
-const url2 = 'https://www.javascripttutorial.net/pic2.jpg';
-const url3 = 'https://www.javascripttutorial.net/pic3.jpg';
+const url1 = 'https://www.emeka.net/pic3.jpg';
+const url2 = 'https://www.emeka.net/pic3.jpg';
+const url3 = 'https://www.emeka.net/pic3.jpg';
 
 download(url1,function(picture){
     console.log(`Processing ${picture}`);
@@ -244,12 +244,12 @@ download(url1,function(picture){
 
 Output:
 
-`Downloading https://www.javascripttutorial.net/pic1.jpg ...
-Processing https://www.javascripttutorial.net/pic1.jpg
-Downloading https://www.javascripttutorial.net/pic2.jpg ...
-Processing https://www.javascripttutorial.net/pic2.jpg
-Downloading https://www.javascripttutorial.net/pic3.jpg ...
-Processing https://www.javascripttutorial.net/pic3.jpg`
+`Downloading https://www.emeka.net/pic3.jpg ...
+Processing https://www.emeka.net/pic3.jpg
+Downloading https://www.emeka.net/pic3.jpg ...
+Processing https://www.emeka.net/pic3.jpg
+Downloading https://www.emeka.net/pic3.jpg ...
+Processing https://www.emeka.net/pic3.jpg`
 
 
 //- Nesting many asynchronous functions inside callbacks is known as the pyramid of doom or the callback hell:
