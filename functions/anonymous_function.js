@@ -51,7 +51,7 @@ How_it_works:
     console.log('Immediately invoked function execution');
 })();
 
-//- Sometimes you may want to pass in and Argument to it
+//- Sometimes you may want to pass in an Argument to it
 
 let person = {
     firstName: 'John',
@@ -91,3 +91,5 @@ let add = (a, b)  => a + b;
 Anonymous functions are functions without names.
 Anonymous functions can be used as an argument to other functions or as an immediately invoked function execution.
  */
+
+ 
